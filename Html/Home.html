@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Aid</title>
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="../Scripts/Home_P/Home_slider.js"></script>
+    <!-- <script src="../Scripts/Home_P/loader.js"></script> -->
+  </head>
+  <body>
+    <div id="loading-screen" class="loading">
+      <div class="loader"></div>
+      <p>Loading, please wait...</p>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h1>INSTA AID <span></span></h1>
+        </div>
+        <div class="menu">
+          <a href="#">About us</a>
+          <a href="#">Eng <i class="language-icon"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h2>EMPOWERING AID, INSTANT RELIEF...</h2>
+      <p>Insta-Aid your virtual lifeline!</p>
+      <form action="../Html/Chatbox.html" method="post" class="chat-form">
+        <div class="input-container">
+          <button type="submit" class="chat-btn">
+            Chat with Insta...<i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+    <!-- Aid Categories -->
+    <section class="categories">
+      <button onclick="redirectToPage()">Cuts</button>
+      <button onclick="redirectToPage()">Snake Bites</button>
+      <button onclick="redirectToPage()">Epilepsy</button>
+      <button onclick="redirectToPage('../../Insta_Aid/HeartAttack/index.html')">Heart Attack</button>
+      <button onclick="redirectToPage()">Shock</button>
+      <button onclick="redirectToPage('../../Insta_Aid/ElextricShock/index.html')">Electrocution</button>
+      <button onclick="redirectToPage('../../Insta_Aid/Asthma/index.html')">Asthma</button>
+    </section>
+
+    <!-- Aid Options with Slider -->
+    <section class="aid-options">
+      <div class="slider-container">
+        <button class="slider-btn left-btn">&#10094;</button>
+        <div class="slider-wrapper">
+          <div class="aid-card">
+            <img src="../images/diag_img/CPR.png" alt="CPR" />
+            <h3>CPR</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/Seizures.png" alt="Seizures" />
+            <h3>SEIZURE</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/Bleeding.png" alt="Bleeding" />
+            <h3>BLEEDING</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/Heart_Attack.png" alt="Heart Attack" />
+            <h3>HEART ATTACK</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/Sb.png" alt="Snake Bite" />
+            <h3>SNAKE BITE</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/asthma.png" alt="Asthma" />
+            <h3>ASTHMA</h3>
+          </div>
+          <div class="aid-card">
+            <img src="../images/diag_img/epilepsy.jpg" alt="Epilepsy" />
+            <h3>EPILEPSY</h3>
+          </div>
+        </div>
+        <button class="slider-btn right-btn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Mission, Vision, and Values -->
+    <section class="mission-vision-values">
+      <h2>Mission, Vision, and Values</h2>
+
+      <h3>IA Mission</h3>
+      <p>
+        To revolutionize healthcare delivery by providing accessible, accurate,
+        and AI-driven solutions that empower patients and healthcare providers
+        to make informed decisions and enhance the quality of care.
+      </p>
+
+      <h3>IA Vision</h3>
+      <p>
+        A world where AI-driven healthcare ensures personalized, efficient, and
+        equitable treatment for all, transforming the patient experience and
+        advancing medical practice for future generations.
+      </p>
+
+      <h3>IA Values</h3>
+      <ul>
+        <li>
+          <strong>Patient-Centricity:</strong> Prioritizing the well-being,
+          dignity, and privacy of every individual.
+        </li>
+        <li>
+          <strong>Innovation:</strong> Continuously pushing the boundaries of AI
+          to improve healthcare delivery.
+        </li>
+        <li>
+          <strong>Ethics and Transparency:</strong> Ensuring that our technology
+          adheres to the highest standards of integrity and accountability.
+        </li>
+        <li>
+          <strong>Collaboration:</strong> Working hand-in-hand with healthcare
+          professionals, patients, and institutions to create solutions that
+          truly meet the needs of the community.
+        </li>
+        <li>
+          <strong>Accessibility:</strong> Committed to making healthcare more
+          accessible and affordable through technology.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 NITDA. All Rights Reserved.</p>
+        <div class="footer-green-line"></div>
+      </div>
+    </footer>
+  </body>
+</html>

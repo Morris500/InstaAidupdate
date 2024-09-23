@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="../CSS/home.css"> <!-- Optional: link to your CSS -->
+</head>
+
+<body>
+    <div id="loading-screen" class="loading">
+        <div class="loader"></div>
+        <p>Loading, please wait...</p>
+    </div>
+
+    <div class="soon-message" style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100vh;">
+        <h1>Coming Soon</h1>
+        <button onclick="redirectToChatPage('Chatbox.html')" style="background-color: #3498db; padding: 10px; border-radius: 20px;">Chat with Insta</button>
+    </div>
+    <script>
+        function redirectToChatPage() {
+            const loadingScreen = document.getElementById("loading-screen");
+            loadingScreen.style.display = "flex";
+            setTimeout(function () {
+                window.location.href = 'Chatbox.html';
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
